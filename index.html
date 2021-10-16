@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <h1 class="text-center border-b py-10 shadow-sm">Responsive Weather App</h1>
+
+    <main class="p-20 max-w-[1200px] ml-auto mr-auto">
+        <!-- =============== searchBar===================== -->
+        <section id="searchBar" class="searchBar text-center">
+            <form action="" id="searchBar-form" role="search">
+                <div>
+                    <label class="py-10 block" for="searchText">Enter your location</label>
+                    <div class="relative max-w-[350px] ml-auto mr-auto">
+                        <input class="border block h-50  px-15  w-[100%]" type="text" id="searchText"
+                            placeholder="City, Country or ZIP">
+                            <i class="fa fa-search absolute top-17 right-15 text-blue-600"></i>
+                            <i class="fas fa-sync fa-spin absolute top-17 right-0 text-blue-600"></i>
+                    </div>
+                </div>
+                <button id="searcBar-button" class="border px-30 py-15 mt-15 bg-indigo-600 text-white rounded-4 w-[170px] hover:bg-indigo-800 transition-all duration-300">Submit</button>
+            </form>
+        </section>
+        <!-- =============== currentForecast===================== -->
+        <section id="currentForecast" class="currentForecast"></section>
+        <!-- =============== navButtons===================== -->
+        <nav id="navButtons" class="navButtons"></nav>
+        <!-- =============== dailyForecast===================== -->
+        <section id="dailyForecast" class="dailyForecast "></section>
+    </main>
+</body>
+
+</html>
